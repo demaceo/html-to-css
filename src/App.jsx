@@ -47,16 +47,25 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <h1>HTML to CSS Generator</h1>
-      <HTMLInput htmlContent={htmlContent} setHtmlContent={setHtmlContent} />
-      <div className="button-container">
-        <button className="generate-button" onClick={handleGenerateCSS}>
-          Generate
-        </button>
+    <>
+      <div className="header-container">
+        <h1>HTML to CSS Generator</h1>
+        <div className="subtext">
+          Generate CSS skeletons based on the class, className, and id
+          attributes found in a given HTML file.
+        </div>
       </div>
-      <CSSOutput cssContent={cssContent} />
-    </div>
+
+      <div className="content-container">
+        <HTMLInput htmlContent={htmlContent} setHtmlContent={setHtmlContent} />
+        <div className="button-container">
+          <button className="generate-button" onClick={handleGenerateCSS}>
+            Generate
+          </button>
+        </div>
+        <CSSOutput cssContent={cssContent} />
+      </div>
+    </>
   );
 }
 

@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
+import "./HTMLInput.css";
 
 function HTMLInput({ htmlContent, setHtmlContent }) {
   return (
-    <div>
+    <div className="input-container">
       <label>
-        <strong>HTML Content:</strong>
+        <strong id="htmlTitle">HTML Content:</strong>
       </label>
       <textarea
         rows="10"

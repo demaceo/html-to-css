@@ -1,14 +1,15 @@
 import PropTypes from "prop-types";
+import "./CSSOutput.css";
 
 function CSSOutput({ cssContent }) {
   return (
-    <div>
+    <div className="output-container">
       <label>
-        <strong>Generated CSS:</strong>
+        <strong id="cssTitle">Generated CSS:</strong>
       </label>
       <textarea
         rows="10"
-        style={{ backgroundColor: "#f4f4f9" }}
+
         value={cssContent}
         readOnly
         placeholder="Your generated CSS will appear here..."

@@ -1,0 +1,36 @@
+.input-container {
+  width: inherit;
+  height: 55vh;
+  border: 1px solid black;
+  box-shadow: 20px 20px 60px #d0d5d9, -20px -20px 60px #ffffff;
+  padding: 5px;
+}
+
+/* #htmlTitle {
+  color: #888338;
+} */
+
+.input-container label {
+  width: 100%;
+  color: #5a5a5a; /* Slate Grey */
+}
+
+#htmlTitle {
+  font-size: 1.7em;
+  font-weight: 500;
+  line-height: 2.5;
+  letter-spacing: 5px;
+  text-align: center;
+  /* color: #888338; */
+}
+
+.input-container textarea {
+  padding: 15px;
+  border-radius: 15px;
+  width: 90%;
+  margin-bottom: 10px;
+  height: 70%;
+  background-color: #e2e8d5; /* Soft Sage */
+  color: #5a5a5a; /* Slate Grey */
+  border: 1px solid #a8bba4; /* Sage Green */
+}
