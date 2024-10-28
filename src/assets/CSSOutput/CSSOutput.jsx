@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 
 function CSSOutput({ cssContent }) {
   return (
@@ -15,5 +16,9 @@ function CSSOutput({ cssContent }) {
     </div>
   );
 }
+
+CSSOutput.propTypes = {
+  cssContent: PropTypes.string.isRequired,
+};
 
 export default CSSOutput;

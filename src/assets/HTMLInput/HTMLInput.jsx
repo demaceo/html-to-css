@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 
 function HTMLInput({ htmlContent, setHtmlContent }) {
   return (
@@ -14,5 +15,10 @@ function HTMLInput({ htmlContent, setHtmlContent }) {
     </div>
   );
 }
+
+HTMLInput.propTypes = {
+  htmlContent: PropTypes.string.isRequired,
+  setHtmlContent: PropTypes.func.isRequired,
+};
 
 export default HTMLInput;
