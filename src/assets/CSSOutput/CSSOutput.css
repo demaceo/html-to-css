@@ -1,0 +1,31 @@
+.output-container {
+  width: inherit;
+  border: 1px solid black;
+  box-shadow: 20px 20px 60px #d0d5d9, -20px -20px 60px #ffffff;
+  height: 55vh;
+}
+
+.output-container label {
+  width: 100%;
+  color: #5a5a5a; /* Slate Grey */
+}
+
+#cssTitle {
+  font-size: 1.7em;
+  font-weight: 500;
+  line-height: 2.5;
+  letter-spacing: 5px;
+  text-align: center;
+  /* color: #138713; */
+}
+
+.output-container textarea {
+  padding: 15px;
+  border-radius: 15px;
+  width: 90%;
+  height: 70%;
+  margin-bottom: 10px;
+  background-color: #e2e8d5; /* Soft Sage */
+  color: #5a5a5a; /* Slate Grey */
+  border: 1px solid #a8bba4; /* Sage Green */
+}
