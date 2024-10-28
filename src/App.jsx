@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./App.css";
+import HTMLInput from "./assets/HTMLInput/HTMLInput";
+import CSSOutput from "./assets/CSSOutput/CSSOutput";
 
 function App() {
   const [htmlContent, setHtmlContent] = useState("");
@@ -47,31 +49,13 @@ function App() {
   return (
     <div className="container">
       <h1>HTML to CSS Generator</h1>
-      <label>
-        <strong id="htmlTitle">HTML Content:</strong>
-      </label>
-      <textarea
-        rows="10"
-        value={htmlContent}
-        onChange={(e) => setHtmlContent(e.target.value)}
-        placeholder="Paste your HTML content here..."
-      />
+      <HTMLInput htmlContent={htmlContent} setHtmlContent={setHtmlContent} />
       <div className="button-container">
         <button className="generate-button" onClick={handleGenerateCSS}>
           Generate
         </button>
       </div>
-
-      <label>
-        <strong id="cssTitle">Generated CSS:</strong>
-      </label>
-      <textarea
-        rows="10"
-        style={{ backgroundColor: "#f4f4f9" }}
-        value={cssContent}
-        readOnly
-        placeholder="Your generated CSS will appear here..."
-      />
+      <CSSOutput cssContent={cssContent} />
     </div>
   );
 }
