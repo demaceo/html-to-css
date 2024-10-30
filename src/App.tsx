@@ -1,15 +1,15 @@
-import { useState } from "react";
-import "./App.css";
+import React, { useState } from "react";
 import HTMLInput from "./assets/HTMLInput/HTMLInput";
 import CSSOutput from "./assets/CSSOutput/CSSOutput";
+import "./App.css";
 
-function App() {
-  const [htmlContent, setHtmlContent] = useState("");
-  const [cssContent, setCssContent] = useState("");
+const App: React.FC = () => {
+  const [htmlContent, setHtmlContent] = useState<string>("");
+  const [cssContent, setCssContent] = useState<string>("");
 
-  const generateCSSFromHTML = (htmlContent) => {
-    const classSet = new Set();
-    const idSet = new Set();
+  const generateCSSFromHTML = (htmlContent: string): string => {
+    const classSet = new Set<string>();
+    const idSet = new Set<string>();
 
     // regex to match both 'class' and 'className' attributes
     const classRegex = /\bclass(Name)?=["']([^"']+)["']/g;
@@ -18,7 +18,7 @@ function App() {
     // Find all classes and classNames
     let match;
     while ((match = classRegex.exec(htmlContent)) !== null) {
-      const classNames = match[2].split(/\s+/); // Access the matched classes
+      const classNames = match[2].split(/\s+/);
       classNames.forEach((className) => classSet.add(className));
     }
 
@@ -38,7 +38,7 @@ function App() {
       cssContent += `#${idName} {\n}\n\n`;
     });
 
-    return cssContent.trim(); // Remove any trailing whitespace
+    return cssContent.trim();
   };
 
   const handleGenerateCSS = () => {
@@ -67,6 +67,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;
