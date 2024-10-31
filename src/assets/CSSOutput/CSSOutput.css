@@ -1,6 +1,7 @@
 .output-container {
   width: inherit;
-  border: 1px solid black;
+  border: 3px solid rgba(0, 0, 0, 0.302);
+  border-radius: 1rem;
   box-shadow: 20px 20px 60px #d0d5d9, -20px -20px 60px #ffffff;
   height: 55vh;
 }
@@ -16,12 +17,11 @@
   line-height: 2.5;
   letter-spacing: 5px;
   text-align: center;
-  /* color: #138713; */
 }
 
 .output-container textarea {
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 1rem;
   width: 90%;
   height: 70%;
   margin-bottom: 10px;

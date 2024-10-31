@@ -13,7 +13,7 @@ const HTMLInput: React.FC<HTMLInputProps> = ({
 }) => (
   <div className="input-container">
     <label>
-      <strong id="htmlTitle">HTML Content:</strong>
+      <strong id="htmlTitle">HTML Input:</strong>
     </label>
     <textarea
       // rows="10"
