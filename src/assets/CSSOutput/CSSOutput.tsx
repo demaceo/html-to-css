@@ -9,7 +9,7 @@ interface CSSOutputProps {
 const CSSOutput: React.FC<CSSOutputProps> = ({ cssContent }) => (
   <div className="output-container">
     <label>
-      <strong id="cssTitle">CSS Output:</strong>
+      <strong id="outputTitle">CSS:</strong>
     </label>
     <textarea
       // rows="10"

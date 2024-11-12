@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./HTMLInput.css"
+import "./HTMLInput.css";
 
 interface HTMLInputProps {
   htmlContent: string;
@@ -16,7 +16,7 @@ const HTMLInput: React.FC<HTMLInputProps> = ({
       <strong id="htmlTitle">HTML Input:</strong>
     </label>
     <textarea
-      // rows="10"
+      className={htmlContent === "" ? "pulsing-border" : ""}
       value={htmlContent}
       onChange={(e) => setHtmlContent(e.target.value)}
       placeholder="Paste your HTML content here..."

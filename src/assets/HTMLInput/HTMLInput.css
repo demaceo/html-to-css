@@ -5,6 +5,13 @@
   border-radius: 1rem;
   box-shadow: 20px 20px 60px #d0d5d9, -20px -20px 60px #ffffff;
   padding: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.pulsing-border {
+  animation: pulse 1.5s infinite ease-in-out;
+  border-color: #85c1e9; /* Soft blue */
+  box-shadow: 0 0 10px rgba(133, 193, 233, 0.5);
 }
 
 .input-container label {
@@ -29,4 +36,16 @@
   background-color: #e2e8d5; /* Soft Sage */
   color: #5a5a5a; /* Slate Grey */
   border: 1px solid #a8bba4; /* Sage Green */
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 5px rgba(133, 193, 233, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(133, 193, 233, 1);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(133, 193, 233, 0.5);
+  }
 }
