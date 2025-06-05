@@ -1,41 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
+  /* Color palette */
+  --cream: #fff8e6;
+  --sage: #e2e8d5;
+  --sage-border: #a8bba4;
+  --slate: #5a5a5a;
+  --navy: #3b5165;
+  --navy-light: #325271;
+  --beige: #d7bfa9;
+  --terracotta: #c2957a;
+  --accent-blue: #85c1e9;
+  --border-light: rgba(0, 0, 0, 0.302);
+  --shadow-color: rgba(208, 213, 217, 0.8);
+  --shadow-highlight: rgba(255, 255, 255, 0.8);
+
+  /* Typography */
+  --font-primary: "Bodoni Moda SC", serif;
+  --font-secondary: Arial, sans-serif;
+
+  /* Spacing */
+  --border-radius: 1rem;
+  --shadow-neumorphic: 20px 20px 60px var(--shadow-color),
+    -20px -20px 60px var(--shadow-highlight);
+
   line-height: 1.5;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  height: 100vh;
-  /* min-height: 100vh; */
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--cream);
+  color: var(--slate);
+  font-family: var(--font-primary);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
