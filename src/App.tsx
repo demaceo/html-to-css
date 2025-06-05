@@ -91,7 +91,7 @@ const App: React.FC = () => {
   return (
     <>
       <div className="header-container">
-        <h1>HTML to CSS & JS <br></br>Generator</h1>
+        <h1>HTML to CSS & JS <br/>Generator</h1>
         <div className="subtext">
           Generate CSS skeletons based on the class, className, and ID
           attributes found in a given HTML file.
