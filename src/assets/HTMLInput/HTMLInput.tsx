@@ -11,15 +11,19 @@ const HTMLInput: React.FC<HTMLInputProps> = ({
   htmlContent,
   setHtmlContent,
 }) => (
-  <div className="input-container">
+  <div
+    className={`input-container ${htmlContent ? "has-content" : ""} ${
+      htmlContent === "" ? "pulsing-border" : ""
+    }`}
+  >
     <label>
       <strong id="htmlTitle">HTML Input:</strong>
     </label>
     <textarea
-      className={htmlContent === "" ? "pulsing-border" : ""}
       value={htmlContent}
       onChange={(e) => setHtmlContent(e.target.value)}
       placeholder="Paste your HTML content here..."
+      spellCheck={false}
     />
   </div>
 );
