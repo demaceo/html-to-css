@@ -115,3 +115,52 @@ const App: React.FC = () => {
 export default App;
 
 // to start: npm run dev 
+
+
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Sample Website</title>
+// </head>
+// <body>
+//     <header class="site-header">
+//         <nav class="main-navigation">
+//             <ul class="nav-list">
+//                 <li class="nav-item"><a href="#home">Home</a></li>
+//                 <li class="nav-item"><a href="#about">About</a></li>
+//                 <li class="nav-item"><a href="#contact">Contact</a></li>
+//             </ul>
+//         </nav>
+//     </header>
+    
+//     <main class="main-content">
+//         <section id="hero" class="hero-section">
+//             <h1 class="hero-title">Welcome to Our Site</h1>
+//             <p class="hero-description">This is a sample description</p>
+//             <button class="cta-button primary-button">Get Started</button>
+//         </section>
+        
+//         <section id="features" class="features-section">
+//             <div class="container">
+//                 <h2 class="section-title">Our Features</h2>
+//                 <div class="features-grid">
+//                     <div class="feature-card">
+//                         <h3 class="feature-title">Feature One</h3>
+//                         <p class="feature-description">Description of feature one</p>
+//                     </div>
+//                     <div class="feature-card">
+//                         <h3 class="feature-title">Feature Two</h3>
+//                         <p class="feature-description">Description of feature two</p>
+//                     </div>
+//                 </div>
+//             </div>
+//         </section>
+//     </main>
+    
+//     <footer class="site-footer">
+//         <p class="footer-text">&copy; 2025 Sample Website</p>
+//     </footer>
+// </body>
+// </html>
